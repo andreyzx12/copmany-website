@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>УК Спект-НН</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/simple.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.arcticmodal-0.3.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/fancybox-master/dist/jquery.fancybox.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js" type="text/javascript"></script>
+    <script src="/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', '.modal', function(e) {
+            e.preventDefault();
+            $('#modal-call').arcticmodal({
+                closeOnOverlayClick: true,
+                openEffect: {
+                    type: 'fade',
+                    speed: 400
+                },
+                closeEffect: {
+                    type: 'fade',
+                    speed: 5
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <div style="display: none;">
+        <div class="box-modal" id="modal-call">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal-content">
+                <form id="SendMess" method="POST">
+                    <div class="box-modal-title">Форма обратной связи</div>
+                    <div id="message-status"></div>
+                    <label>
+                        <input type="text" name="name" maxlength="50" required><span data-place="Как к Вам обращаться"></span>
+                    </label>    
+                    <hr class="hr-input">
+                    <label>
+                        <input type="text" name="phone" maxlength="100" required><span data-place="Ваш Телефон"></span>
+                    </label>    
+                    <hr class="hr-input">
+                    <label>
+                        <input type="text" name="mail" maxlength="100" required><span data-place="Ваш Email"></span>
+                    </label>    
+                    <hr class="hr-input">
+                    <label>
+                        <input type="text" name="body" required><span data-place="Сообщение"></span>
+                    </label>
+                    <hr class="hr-input" style="position: relative; top: -4px;">
+                    <div class="text-w"><span>*</span> - поля обязательны для заполнения</div>
+                    <button class="button-form">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="menu-mini"></div>
+            <a href="/"><div class="logo-mini"></div></a>
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="#service">Услуги</a></li>
+                    <li><a href="#advantage">Преимущества</a></li>
+                    <li style="width: 23%">
+                        <div class="header-menu-center">
+                            <a href="index.html">УК Спектр-НН<div class="logo"></div></a>
+                        </div>
+                    </li>
+                    <li><a href="#company">О компании</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="features" class="title">
+        <div class="title-block">
+            <div class="phone"><a href="">+7-(986)-xxx-xx-xx</a></div>
+            <div class="title-text-320">Отделываем, монтируем, <br>обслуживаем </div>
+            
+            <h1>Аренда площадей под разные виды деятельности</h1>
+            <div class="title-text">Отделываем, монтируем, обслуживаем</div>
+            <div class="info-title-320">
+                Отдаем под аренду 6, 8, 12, 16, 18 <br>
+                и 24 квадратный метра под <br>
+                различные виды деятельности <br>
+            </div>
+            <div class="arrow"></div>
+            <a class="title-button modal" href="#">Заказать</a>
+            <div class="title-block-scales">
+                <div class="left">
+                    <div class="scales-num"><span>6</span><span>8</span><span>12</span><span>16</span><span>18</span><span>24</span></div>
+                    <div class="scales-img"></div>
+                    <div class="scales-text">квадратные метры</div>
+                </div>
+                
+                <div class="right">
+                    <div class="scales-num"><span style="text-align: left">20</span><span style="text-align: right">100</span></div>
+                    <div class="scales-img"></div>
+                    <div class="scales-text">количество площадей</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    <div class="separator"></div>
+    
+    <section id="equipment" class="order">
+        <div class="order-block">
+            <h2>Наши площади</h2>
+            <div class="order-block-info">
+                <div class="text-bold">Поможем вам в развитии <br>бизнеса и продвижении</div>
+                <div class="text">Именно наша компания имеет самые низкие цены по аренде 
+                    на рынке. Каждый второй арендодатель завышает цены на свои 
+                    площади.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="hr-separator">
+        
+    <section id="service" class="price">
+        <div class="price-block">
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 5 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>5 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b> с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">11 000 руб.</div>
+                </div>
+            </div>
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 12 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>12 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b> с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">14 000 руб.</div>
+                </div>
+            </div>
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 20 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>20 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b> с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">16 000 руб.</div>
+                </div>
+            </div>
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 30 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>30 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b>   с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">25 000 руб.</div>
+                </div>
+            </div>
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 45 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>45 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b>  с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">37 000 руб.</div>
+                </div>
+            </div>
+            <div class="price-mini-block">
+                <div class="price-title">
+                    <h4>Площадь 60 квадратных метров</h4>
+                    <div class="price-text">
+                        Размер <b>60 квадратных метров</b><br>
+                        Выход в сеть <b>220В</b><br>
+                        Смежная вентиляция<b> с залом</b><br>
+                        Срок подписания до <b>1 рабочей недели</b><br>
+                    </div>
+                </div>
+                <hr class="price-separator">
+                <div class="price-content">
+                    <div class="price-sum">54 000 руб.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr-separator">
+
+    <section id="service" class="service"> 
+        <div class="service-block-info">
+            <h2>Наши торговые центры</h2>
+            <div class="img-work">
+                <a href="images/service-1.jpg" data-fancybox="images" data-caption="Южное ш., 2Г, Нижний Новгород">
+                    <img src="images/service-1.jpg" alt="Южное ш., 2Г, Нижний Новгород" />
+                </a>
+                <a href="images/service-2.jpg" data-fancybox="images" data-caption="ул. Родионова, 165, корп. 13, Нижний Новгород">    
+                    <img src="images/service-2.jpg" alt="ул. Родионова, 165, корп. 13, Нижний Новгород" />
+                </a>
+                <a href="images/service-5.jpg" data-fancybox="images" data-caption="Бурнаковский, Московский район, Нижний Новгород">
+                    <img src="images/service-5.jpg" alt="Бурнаковский, Московский район, Нижний Новгород" />
+                </a>
+                <a href="images/service-4.jpg" data-fancybox="images" data-caption="Южный бул., 22А, Нижний Новгород">
+                    <img src="images/service-4.jpg" alt="Южный бул., 22А, Нижний Новгород" />
+                </a>
+                <a href="images/service-3.jpg" data-fancybox="images" data-caption="Верхнепечёрская ул., 14Б, Нижний Новгород">
+                    <img src="images/service-3.jpg" alt="Верхнепечёрская ул., 14Б, Нижний Новгород" />
+                </a>
+                <a href="images/service-8.jpg" data-fancybox="images" data-caption="Южное ш., 2Г, Нижний Новгород">
+                    <img src="images/service-8.jpg" alt="Южное ш., 2Г, Нижний Новгород" />
+                </a>
+                <a href="images/service-7.jpg" data-fancybox="images" data-caption="Бурнаковская ул., 103А, Нижний Новгород">
+                    <img src="images/service-7.jpg" alt="Бурнаковская ул., 103А, Нижний Новгород" />
+                </a>
+                <a href="images/service-6.jpg" data-fancybox="images" data-caption="ул. Янки Купалы, 30А, Нижний Новгород">
+                    <img src="images/service-6.jpg" alt="ул. Янки Купалы, 30А, Нижний Новгород" />
+                </a>
+                <a href="images/service-9.jpg" data-fancybox="images" data-caption="Южный бул., 22А, Нижний Новгород">
+                    <img src="images/service-9.jpg" alt="Южный бул., 22А, Нижний Новгород" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantage" class="dop-service">
+        <div class="dop-service-bg">
+            <div class="content">
+                <h2>Почему выбирают именно нас?</h2>
+                <div class="text-bold">
+                    
+                </div>
+                <div class="list-block">
+                    <div class="list-block-mini">
+                        <div class="num">01</div>
+                        <div class="text">Заключаем договора любой сложности    </div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">02</div>
+                        <div class="text">Для каждого заказчика найдется приемлемая цена</div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">03</div>
+                        <div class="text">Всегда готовы подстроиться под ваши сроки</div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">04</div>
+                        <div class="text">На рынке уже 6 лет</div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">05</div>
+                        <div class="text">Стаж работы каждого из наших специалистов не менее 5 лет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dop-servise-arrow"></div>
+    </section>
+     
+    <section id="company" class="company">
+        <div class="company-info">
+            <div class="content">
+                <h2>Краткая информация о УК Спектр-НН</h2>
+                <div class="list-block">
+                    <div class="list-block-mini">
+                        <div class="num">01</div>
+                        <div class="text">
+                            <span>УК Спектр-НН</span>
+                            компания, специализирующаяся на продаже
+                            и управлении недвижимым имуществом.
+                        </div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">02</div>
+                        <div class="text">
+                            <span>Наша компания</span>
+                            на рынке уже более 6 лет.
+                        </div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">03</div>
+                        <div class="text">
+                            <span>14 дней</span>
+                            с момента подписания договора до ввода помещения в эксплуатацию
+                        </div>
+                    </div>
+                    <div class="list-block-mini">
+                        <div class="num">04</div>
+                        <div class="text">
+                            <span>Минимизируем затраты</span>
+                            мы стремимся минимизировать затраты наших клиентов. 
+                            Помогаем экономить, давать скидки новым клиентам без потери качества и функциональных 
+                            возможностей заказанного
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer" class="footer">
+        <div id="scroll-page"></div> 
+        <div class="content">
+            <div class="footer-logo"> УК Спект-НН</div>
+            <div class="footer-phone">
+                <div class="footer-title">Телефон</div>
+                <div class="footer-text">
+                    +7-966-xx-xx-xxx<br>
+                    +7-930-xxx-xx-xx
+                </div>
+            </div>
+            <div class="footer-address">
+                <div class="footer-title">Адрес</div>
+                <div class="footer-text">
+                    г. Нижний Новгород<br>
+                    ул. Южное шоссе 2г<br>
+                    офис 58<br>
+                </div>
+            </div>
+            <div class="footer-mail">
+                <div class="footer-title">Почта</div>
+                <div class="footer-text">gog13gogv@gmail.com</div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $('#scroll-page').fadeIn();
+                } else {
+                    $('#scroll-page').fadeOut();
+                }
+            });
+            $('#scroll-page').click(function() {
+                $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        
+        $('.menu-mini').on('click', function() {
+            if ($('.header-menu').css('display') == 'none') {
+                $('.header-menu').show();
+            } else {
+                $('.header-menu').hide();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1301 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    outline: none;
+}
+
+/********** БЛОК HEADER **********/
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.header-top {
+    width: 100%;
+    background: #0E3075;
+    height: 91px;
+    text-align: center;
+}
+
+.menu-mini {
+    position: absolute;
+    background: url(../images/menu-ad.png) no-repeat;
+    background-size: 38px 21px;
+    width: 38px;
+    height: 21px;
+    top: 35px;
+    left: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.header-menu {
+    font-family: OpenSans-Regular;
+    display: inline-block;
+    width: 100%;
+    height: 91px;
+    vertical-align: top;
+}
+
+.header-menu ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-menu ul li {
+    list-style: none;
+    display: inline-block;
+    width: 12%;
+    vertical-align: top;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 51px;
+    padding-top: 35px;
+}
+
+.header-menu ul li a:hover {
+    color: #00DDE8;
+}
+
+/* Центральный блок верхнего меню */
+.header-menu-center {
+    background: url(../images/header-menu-center.png) no-repeat;
+    background-size: 221px 112px;
+    width: 221px;
+    height: 112px;
+    display: inline-block;
+    position: relative;
+}
+
+.header-menu-center .logo {
+    background-size: 107px 39px;
+    width: 107px;
+    height: 39px;
+    position: absolute;
+    top: 30px;
+    left: 57px;
+}
+
+.logo-mini {
+    background-size: 76px 27px;
+    width: 76px;
+    height: 91px;
+    display: none;
+    margin: 0 auto;
+}
+
+/* Правый блок верхнего меню */
+.header-menu-right {
+    font-family: OpenSans-Regular;
+    display: inline-block;
+    width: 500px;
+    height: 91px;
+    vertical-align: top;
+    padding-top: 32px;
+}
+
+.header-menu-right ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-menu-right ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.header-menu-right ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header-menu-right ul li a:hover {
+    color: #00DDE8;
+}
+/********** КОНЕЦ БЛОК HEADER **********/
+
+/********** БЛОК TITLE **********/
+.title {
+    width: 100%;
+    position: relative;
+    top: -91px;
+    background: url(../images/title-gradient.png) no-repeat, url(../images/block-1-bg.jpg) no-repeat;
+    background-size: cover, cover;
+}
+
+.title-block {
+    position: relative;
+    top: 70px;
+    padding-top: 30px;
+}
+
+.title-block .phone {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-right: 100px;
+}
+
+.title-block .title-text-320 {
+    display: none;
+}
+
+.title-block .info-title-320 {
+    display: none;
+}
+
+.title-block .phone a {
+    color: #FFFFFF;
+    font-size: 26px;
+    padding-top: 15px;
+    font-family: BebasNeue;
+}
+
+.title-block .phone a:hover {
+    color: #00DDE8;
+}
+
+.title-block h1 {
+    width: 100%;
+    max-width: 670px;
+    font-family: BebasNeue;
+    font-size: 44px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto 10px auto;
+    
+}
+
+.title-block .title-text {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-block .arrow {
+    background: url(../images/title-arrow.png) no-repeat;
+    background-size: 29px 38px;
+    width: 29px;
+    height: 38px;
+    margin: 15px auto;
+}
+
+.title-block .title-button {
+    display: block;
+    background: #00DDE8;
+    border-radius: 4px;
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: #313133;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 30px;
+    width: 130px;
+    margin: 0 auto;   
+}
+
+.title-block .title-button:hover {
+    background: #50e7ee;
+}
+
+/******** БЛОК С ПАНЕЛЬЮ ********/
+.title-block-scales {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    max-width: 1100px; 
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #D9DDE9;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0, 0.1);
+}
+
+/* Левый блок */
+.title-block-scales .left {
+    width: 480px;
+    display: inline-block;
+}
+
+.title-block-scales .left .scales-num {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.title-block-scales .left .scales-num span {
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #312F30;
+    display: inline-block;
+    text-align: center;
+    width: 54px;
+}
+
+.title-block-scales .left .scales-img {
+    background: url(../images/scales-m.png) no-repeat;
+    background-size: 285px 15px;
+    width: 285px;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.title-block-scales .left .scales-text {
+    padding-top: 5px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #312F30;
+    text-align: center;
+}
+    
+/* Правый блок */
+.title-block-scales .right {
+    width: 480px;
+    display: inline-block;
+}
+
+.title-block-scales .right .scales-num {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.title-block-scales .right .scales-num span {
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #312F30;
+    display: inline-block;
+    width: 145px;
+}
+
+.title-block-scales .right .scales-img {
+    background: url(../images/scales-t.png) no-repeat;
+    background-size: 285px 15px;
+    width: 285px;
+    height: 15px;
+    margin: 0 auto;
+}
+
+.title-block-scales .right .scales-text {
+    padding-top: 5px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #312F30;
+    text-align: center;
+}
+/******** КОНЕЦ БЛОК ПАНЕЛЬ ********/
+
+.separator {
+    background: url(../images/seprator.png) no-repeat;
+    background-size: 29px 38px;
+    width: 29px;
+    height: 38px;
+    margin: 20px auto 40px auto;
+}
+
+/* ******* БЛОК УСЛУГИ ********/
+.order {
+   background: #D8DDE9;
+   position: relative;
+}
+
+.order-block {
+    background: url(../images/order-bg-left.jpg) no-repeat top left, url(../images/order-bg-right.jpg) no-repeat top right;
+    background-size: 395px auto, 395px auto;
+}
+
+.order-block h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px 0px 0px;
+}
+
+.order-block-info {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.order-block-info .text-bold {
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #312F30;
+    text-align: center;
+}
+    
+.order-block-info .text {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #312F30;
+    text-align: center;
+    padding: 10px;
+}
+
+.order-block-info .order-button {
+    display: inline-block;
+    background: #0E3175;
+    border-radius: 4px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    margin: 15px 0px 35px 0px;
+}
+
+.order-block-info .order-button:hover {
+    background: #163d88;
+    color: #FFFFFF;
+}
+/******** КОНЕЦ БЛОК УСЛУГИ ******* */
+
+.hr-separator {
+    border: 0px;
+    height: 1px;
+    background: #D9DDE9;
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+/******** БЛОК ПРАЙСЫ ********/
+.price {
+   position: relative;
+}
+
+.price-block {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.price-mini-block {
+    width: 320px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #D8DDE9;
+    box-shadow: 0px 15px 40px 1px rgba(0,0,0, 0.1);
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    margin: 0px 10px 25px 10px;
+}
+
+.price-mini-block .price-title {
+    padding: 0px 10px 20px 10px;
+}
+
+.price-mini-block .price-title h4 {
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #313131;
+    margin-top: 0px;
+}
+
+.price-mini-block .price-title .price-text {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    color: #312F30;
+}
+
+.price-mini-block .price-separator {
+    border: 0px;
+    height: 1px;
+    background: #8A8FA2;
+    width: 100%;
+}
+
+.price-mini-block .price-content {
+    padding: 10px 10px 10px 10px;
+}
+
+.price-mini-block .price-content .price-name {
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    color: #313131;
+    padding: 0px 0px 10px 0px;
+}
+
+.price-mini-block .price-content .price-text {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    color: #312F30;
+}
+
+.price-mini-block .price-content .price-image {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+    
+.price-mini-block .price-content .price-image img {
+    width: 100%;
+}
+
+.price-mini-block .price-content .price-sum {
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-info {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.price-info h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0px 0px 0px;
+}
+
+.price-info .price-info-text {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #312F30;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.price-info .price-button {
+    display: inline-block;
+    background: #0E3175;
+    border-radius: 4px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    margin: 15px 0px 35px 0px;
+}
+
+.price-info .price-button:hover {
+    background: #163d88;
+    color: #FFFFFF;
+}
+/******** КОНЕЦ БЛОК ПРАЙСЫ ********/
+
+
+
+/******** БЛОК ФОТО ********/
+.service {
+    position: relative;
+}
+
+.service-block-bg {
+   background: #D8DDE9 url(../images/service-bg.jpg) no-repeat center center;
+   background-size: cover;
+   position: relative;
+   padding-bottom: 50px;
+}
+
+.service-block-bg .content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-block-bg .content h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0px 10px 0px;
+}
+
+.service-block-bg .content .image {
+    background: url(../images/vesi.png) no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    max-width: 468px;
+    height: 300px;
+    display: inline-block
+}
+
+.service-block-bg .content .info {
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+}
+
+.service-block-bg .content .info .info-block {
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+}
+
+.service-block-bg .content .info .info-block .info-1-img {
+    border-radius: 100px;
+    background: url(../images/info-1-img.png) no-repeat center center;
+    background-size: 31px auto;
+    border: 2px solid #0E3175;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-block-bg .content .info .info-block .info-2-img {
+    border-radius: 100px;
+    background: url(../images/info-2-img.png) no-repeat center center;
+    background-size: 31px auto;
+    border: 2px solid #0E3175;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-block-bg .content .info .info-block .info-3-img {
+    border-radius: 100px;
+    background: url(../images/info-3-img.png) no-repeat center center;
+    background-size: 31px auto;
+    border: 2px solid #0E3175;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-block-bg .content .info .info-block .info-text {
+    max-width: 400px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #312F30;
+    text-align: left;
+}
+
+.service-block-info {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service-block-info h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0px 10px 0px;
+}
+
+.service-block-info .img-work {
+    padding-bottom: 50px;
+}
+
+.service-block-info .img-work img {
+    width: 314px;
+    height: 188px;
+    margin: 10px;
+    display: inline-block;
+}
+/******** КОНЕЦ БЛОК ФОТО ********/
+
+/******** БЛОК ПРЕИМУЩЕСТВА ********/
+.dop-service {
+    position: relative;
+}
+
+.dop-service-bg {
+   background: #D8DDE9 url(../images/dop-service-br.jpg) no-repeat;
+   background-size: cover;
+   position: relative;
+   padding-bottom: 50px;
+}
+
+.dop-servise-arrow {
+    background: url(../images/arrow-block.png) no-repeat center center;
+    width: 100%;
+    height: 34px;
+}
+
+.dop-service-bg .content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dop-service-bg .content h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0px 10px 0px;
+}
+
+.dop-service-bg .content .text-bold {
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #D9DDE6;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.dop-service-bg .content .list-block {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-block .list-block-mini {
+    width: 300px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    margin: 20px 10px 20px 10px;
+}
+
+.list-block .list-block-mini .num {
+    border-radius: 100px;
+    border: 2px solid #DADFEA;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: #DADFEA;
+    font-family: BebasNeue;
+    font-size: 26px;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.list-block .list-block-mini .text {
+    width: 210px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.dop-service-button {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.dop-service-button a {
+    display: inline-block;
+    background: #00DDE8;
+    border-radius: 4px;
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: #313133;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 30px;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.dop-service-button a:hover { 
+    background: #50e7ee;
+}
+
+.dop-service-info {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    background: url(../images/dop-block-vesi.png) no-repeat right 90%;
+}
+
+.dop-service-info h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0px 10px 0px;
+}
+
+.dop-service-info .list-block-info {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.list-block-info .list-block-mini {
+    width: 300px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    margin: 0px 30px;
+    height: 300px;
+}
+
+.list-block-info .list-block-mini .img-1 {
+    background: url(../images/dop-1.png) no-repeat center center;
+    background-size: 40px auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.list-block-info .list-block-mini .img-2 {
+    background: url(../images/dop-2.png) no-repeat center center;
+    background-size: 40px auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.list-block-info .list-block-mini .img-3 {
+    background: url(../images/dop-3.png) no-repeat center center;
+    background-size: 33px auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.list-block-info .list-block-mini .img-4 {
+    background: url(../images/dop-4.png) no-repeat center center;
+    background-size: 40px auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.list-block-info .list-block-mini .img-5 {
+    background: url(../images/dop-5.png) no-repeat center center;
+    background-size: 25px auto;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.list-block-info .list-block-mini .title-bold {
+    font-family: OpenSans-Bold;
+    font-size: 18px;
+    color: #313131;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.list-block-info .list-block-mini .text {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #313131;
+    text-align: left;
+}
+/******** КОНЕЦ БЛОК ПРЕИМУЩЕСТВА ********/
+
+
+
+/******** БЛОК О КОМПАНИИ ********/
+.company {
+    position: relative;
+}
+
+.company-info {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    
+}
+
+.company-info h2 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    color: #0E3175;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0px 10px 0px;
+}
+
+.company-info .content .list-block {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.company-info .list-block-mini {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    margin: 20px 10px 40px 10px;
+}
+
+.company-info .list-block-mini .num {
+    border-radius: 100px;
+    border: 2px solid #5E739E;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: #5E739E;
+    font-family: BebasNeue;
+    font-size: 26px;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.company-info .list-block-mini .text {
+    width: 390px;
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #323232;
+    text-align: left;
+}
+
+.company-info .list-block-mini .text span {
+    font-family: OpenSans-Bold;
+    font-size: 18px;
+    color: #323232;
+}
+/******** КОНЕЦБЛОК О КОМПАНИИ ********/
+
+/* ПОДВАЛ */
+.footer {
+    width: 100%;
+    background: #1E1E1E;
+    position: relative;
+}
+
+#scroll-page {
+    background: url(../images/scroll.png) no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    bottom: 50px;
+    right:50px;
+    cursor: pointer;
+    display: none;
+}
+
+.footer .content {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 40px 30px 60px 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.footer-title {
+    font-family: OpenSans-Bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.footer-text {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    color: #ACACAC;
+    text-align: left;
+}
+
+.footer .content .footer-logo {
+    margin: 0 auto;
+    padding: 0px 0px 15px 0px;
+    font-family: OpenSans-Bold;
+    font-size: 18px;
+    color: white;
+    background-size: 72px 27px;
+    width: 19%;
+    min-width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.footer .content .footer-phone {
+    width: 19%;
+    min-width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .content .footer-address {
+    width: 19%;
+    min-width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .content .footer-mail {
+    width: 19%;
+    min-width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer .content .footer-button {
+    width: 19%;
+    min-width: 150px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.footer .content .footer-button a {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    background: #00DDE8;
+    border-radius: 4px;
+    font-family: BebasNeue;
+    font-size: 22px;
+    color: #313133;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 35px;
+    width: 200px;
+    margin: 0 auto;   
+}
+
+.footer .content .footer-button a:hover {
+    background: #50e7ee;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .menu-mini {
+        display: block;
+    }
+    
+    .logo-mini {
+        display: block;
+    }
+
+    .header-menu {
+        position: relative;
+        display: none;
+    }
+        
+    .header-menu ul li {
+        display: block;
+        background: #0E3075;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 200px;
+        text-align: left;
+    }
+    
+    .header-menu ul li a {
+        display: block;
+        height: auto;
+        padding: 15px 30px;
+        font-family: OpenSans-bold;
+        font-size: 14px;
+        color: #FFFFFF;
+        
+    }
+    
+    .header-menu ul li a:hover {
+        color: #FFFFFF;
+        background: #163D88;
+    }
+
+    .header-menu ul li:nth-child(3) {
+        display: none;
+    }
+    
+    .order-block {
+        background: #D8DDE9;
+    }
+        
+    .platform-block-content {
+        background: #D8DDE9;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .service-block-bg .content .info .info-block .info-text {
+        max-width: 300px;
+    }
+    
+    .company-info .list-block-mini .text {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .title-block {
+       padding-bottom: 90px;
+    }
+    
+    .title-block .phone {
+        display: none;
+    }
+    
+    .title-block .title-text-320 {
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        color: #8C9FC0;
+        text-align: center;
+        display: block;
+    }
+    
+    .title-block .title-text {
+        display: none;
+    }
+    
+    .title-block h1 {
+        font-size: 38px;   
+    }
+    
+    .title-block .info-title-320 {
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        display: block;
+    }
+    
+    .title-block .title-button {
+        display: block;
+        width: 90%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        text-align: center;
+    }
+
+    .title-block-scales {
+        display: none;
+    }
+    
+    .separator {
+        display: none;
+    }
+    
+    .order {
+        background: #FFFFFF;
+        position: relative;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+
+    .order-block {
+        background: #FFFFFF;
+    }
+    
+    .order-block h2 {
+        padding: 0px 0px 0px 0px;
+        margin-top: 0px;
+    }
+    
+    .order-button {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 90%;
+    }
+    
+    .hr-separator {
+        display: none;
+    }
+    
+    .price-info {
+        background: #D9DDE9;
+    }
+        
+    .platform-block-bg {
+        background: #FFFFFF;
+    }
+
+    .platform-block-content {
+        background: #FFFFFF;
+    }
+        
+    .service-block-bg .content .info .info-block .info-text {
+        max-width: 250px;
+    }
+        
+    .service-block-info .img-work img {
+        width: 150px;
+        height: 90px;
+        margin: 5px;
+        display: inline-block;
+    }    
+        
+    .service-block-info .img-work img:nth-child(9) {
+        display: none;
+    }
+    
+    .dop-service-button a {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 90%;
+    }
+
+    .dop-service-info {
+        background: url(../images/dop-block-vesi.png) no-repeat right 100%;
+        padding-bottom: 100px;
+    }
+
+    .company-info .list-block-mini {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .company-info .list-block-mini .num {
+        border-radius: 100px;
+        border: 2px solid #5E739E;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        color: #5E739E;
+        font-family: BebasNeue;
+        font-size: 26px;
+        text-align: center;
+        line-height: 60px;
+        vertical-align: middle;
+    }
+
+    .company-info .list-block-mini .text {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 260px;
+        padding-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #323232;
+        text-align: left;
+    }
+
+    .company-info .list-block-mini .text span {
+        font-family: OpenSans-Bold;
+        font-size: 18px;
+        color: #323232;
+    }
+    
+    .footer .content .footer-button {
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    .footer .content .footer-button a {
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+    
+    
+    
+    .footer .content {
+        width: 100%;
+        max-width: 1100px;
+        text-align: center;
+        padding: 40px 10px 60px 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    
+}
+
+.message-status {
+    text-align: center;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    display: none;
+}
